@@ -1,3 +1,6 @@
 namespace: default
-resources:
-  - secret.yaml
+secretGenerator:
+- name: db-user-pass
+  literals:
+  - username=admin
+  - password=1f2d1e2e67df
